@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".CardDetail"
+    android:background="@drawable/ric">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/cards_detail"
+        android:textAlignment="center"
+        android:textColor="#ffff00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/crd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/card_holder_name"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/father_husbandd_name"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/tadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/addresss"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/bod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/birthday_date"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dd_mm_yyi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/card_type"
+            android:text="@string/card_typee"
+            android:inputType="textPersonName"
+            android:textColor="#000000" tools:targetApi="o"
+            android:importantForAutofill="no"
+            android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/rggrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/hrice"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="rbclick"
+            android:text="@string/phhrice"
+            tools:targetApi="donut" />
+
+        <RadioButton
+            android:id="@+id/arce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="rbclick"
+            android:text="@string/phha"
+            tools:targetApi="donut" />
+
+        <RadioButton
+            android:id="@+id/nrec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="rbclick"
+            android:text="@string/nphh"
+            tools:targetApi="donut" />
+
+        <RadioButton
+            android:id="@+id/srce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="rbclick"
+            android:text="@string/nphhs"
+            tools:targetApi="donut"/>
+
+        <RadioButton
+            android:id="@+id/crce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="rbclick"
+            android:text="@string/nphhnc"
+            tools:targetApi="donut" />
+
+
+    <Button
+        android:id="@+id/btnprvw"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/previiew"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/submit"
+        android:textColor="#000000" />
+
+    </RadioGroup>
+    </LinearLayout>
+</ScrollView>

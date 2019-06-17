@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".DetailActivity"
+    android:background="@drawable/guu">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/registration"
+        android:textColorHint="#fffafa"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginEnd="5dp"
+        android:textColor="#ff0000"/>
+
+    <EditText
+        android:id="@+id/ename"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/nameE"
+        android:inputType="textPersonName"
+        android:textColorHint="#fffafa" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/egender"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/genderr"
+        android:inputType="textPersonName"
+        android:text="@string/egender"
+        android:textColor="#fffafa" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/rbut"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="rbclick"
+            android:text="@string/malee" tools:targetApi="donut"/>
+
+        <RadioButton
+            android:id="@+id/rrbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="rbclick"
+            android:text="@string/femalee" tools:targetApi="donut"/>
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/fatherr_husband_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="#fffafa"
+        tools:targetApi="o" />
+
+
+
+    <EditText
+        android:id="@+id/etadd"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textPersonName"
+        android:text="@string/Addresss"
+        android:textSize="15sp"
+        android:textColor="#fffafa"
+        android:textStyle="bold" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/etdoor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/doorno"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:textColorHint="#fffafa"
+        android:textStyle="bold" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/etstreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/streetno"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:textColorHint="#fffafa"
+        android:textStyle="bold" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/etphn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="@string/phoneno"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:textColorHint="#fffafa"
+        android:textStyle="bold" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/etcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/cityt"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:textColorHint="#fffafa"
+        android:textStyle="bold" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/etdist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/District"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:textColorHint="#fffafa"
+        android:textStyle="bold" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+
+    <EditText
+        android:id="@+id/etpic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/pincode"
+        android:inputType="textPersonName|number"
+        android:textSize="15sp"
+        android:textColorHint="#fffafa"
+        android:textStyle="bold" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="numberPassword"
+        android:textColorHint="#fffafa"
+        android:layout_marginTop="15dp" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="@string/backk" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/submitt"
+        android:layout_marginTop="15dp"/>
+
+    </RadioGroup>
+</LinearLayout>
+</ScrollView>

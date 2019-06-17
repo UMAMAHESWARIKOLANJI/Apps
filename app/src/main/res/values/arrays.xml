@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Card_type">
+        <item>PHHRICE</item>
+        <item>PHHA</item>
+        <item>NPHH</item>
+        <item>NPHHS</item>
+        <item>NPHHNC</item>
+    </string-array>
+</resources>
